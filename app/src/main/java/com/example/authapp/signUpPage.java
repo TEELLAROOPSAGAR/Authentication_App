@@ -109,7 +109,10 @@ public class signUpPage extends AppCompatActivity implements View.OnClickListene
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(name,age,email);
+                            User user = new User();
+                            user.setAge(age);
+                            user.setEmail(email);
+                            user.setName(name);
 
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())

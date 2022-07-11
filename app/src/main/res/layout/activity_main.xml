@@ -70,6 +70,19 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="Roopsagar®"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
         android:id="@+id/txtVForgotPassword"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
@@ -111,6 +124,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.341" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
